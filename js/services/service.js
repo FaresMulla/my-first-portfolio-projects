@@ -30,9 +30,9 @@ function _createProj(name, title, desc, url, publishedAt, labels){
 }
 
 function _createProjs(){
-    gProjs = loadFromStorage(STORAGE_KEY)
+    // gProjs = loadFromStorage(STORAGE_KEY)
     
-    if(!gProjs || !gProjs.length){
+    // if(!gProjs || !gProjs.length){
         gProjs = [
             _createProj('Minesweeper','Board game', 'lorem ipsum lorem ipsum lorem ipsum', '/projs/minesweeper/index.html', 1644244550493, ['Matrixes', 'keyboard events','Games']),
             _createProj('In-Picture Game','Impornant Software', 'lorem ipsum lorem ipsum lorem ipsum', '/projs/picture/index.html', 1644244572182, ['Matrixes', 'keyboard events','Software']),
@@ -42,7 +42,7 @@ function _createProjs(){
             _createProj('Todos','Impornant Software', 'lorem ipsum lorem ipsum lorem ipsum', '/projs/todos/index.html', 1644244600166, ['Matrixes', 'keyboard events','Software']),
             _createProj('Books Shop','Impornant Software', 'lorem ipsum lorem ipsum lorem ipsum', '/projs/bookShop/index.html', 1644244607124, ['Matrixes', 'keyboard events','Software'])
         ]
-    }
+    //}
     
     _saveProjsToStorage()
 }
