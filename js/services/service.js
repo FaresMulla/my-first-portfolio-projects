@@ -35,12 +35,12 @@ function _createProjs(){
     // if(!gProjs || !gProjs.length){
         gProjs = [
             _createProj('Minesweeper','Board game', 'lorem ipsum lorem ipsum lorem ipsum', '/projs/minesweeper/index.html', 1643666400000, ['Matrixes', 'keyboard events','Games']),
-            _createProj('In-Picture Game','Impornant Software', 'lorem ipsum lorem ipsum lorem ipsum', '/projs/picture/index.html', 1644451325000, ['Matrixes', 'keyboard events','Software']),
+            _createProj('In-Picture Game','Important Software', 'lorem ipsum lorem ipsum lorem ipsum', '/projs/picture/index.html', 1644451325000, ['Matrixes', 'keyboard events','Software']),
             _createProj('Touch Nums','Board game', 'lorem ipsum lorem ipsum lorem ipsum', '/projs/touch-nums/index.html', 1644244579510, ['Matrixes', 'keyboard events','Games']),
             _createProj('Ball Board','Board game', 'lorem ipsum lorem ipsum lorem ipsum', '/projs/ball-board/index.html', 1644244587084, ['Matrixes', 'keyboard events','Games']),
             _createProj('Chess','Board game', 'lorem ipsum lorem ipsum lorem ipsum', '/projs/chess/index.html', 1644244593129, ['Matrixes', 'keyboard events','Games']),
-            _createProj('Todos','Impornant Software', 'lorem ipsum lorem ipsum lorem ipsum', '/projs/todos/index.html', 1644244600166, ['Matrixes', 'keyboard events','Software']),
-            _createProj('Books Shop','Impornant Software', 'lorem ipsum lorem ipsum lorem ipsum', '/projs/bookShop/index.html', 1644244607124, ['Matrixes', 'keyboard events','Software'])
+            _createProj('Todos','Important Software', 'lorem ipsum lorem ipsum lorem ipsum', '/projs/todos/index.html', 1644244600166, ['Matrixes', 'keyboard events','Software']),
+            _createProj('Books Shop','Important Software', 'lorem ipsum lorem ipsum lorem ipsum', '/projs/bookShop/index.html', 1644244607124, ['Matrixes', 'keyboard events','Software'])
         ]
     //}
     
