@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Number Sequence Game</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="init()">
+    <h1 class="pageHeader">Numbers Sequence Game</h1>
+    <div class="mainContaner">
+        <button onclick="document.querySelector('.gameBoxDLevel').style.display = 'block'" class="startBtn">New Game</button>
+        <div class="gameBoxDLevel">
+            <p class="Instructions">Please Choose a difficulty level</p>
+            <table class="tBtns">
+                <tr>                    
+                <td class="tdBtn"><button onclick="createDLevel(16)" class="startBtn btnTd ebtn">Eazy (16)</button></td>
+                <td class="tdBtn"><button onclick="createDLevel(25)" class="startBtn btnTd hbtn">Hard (25)</button></td>
+                <td class="tdBtn"><button onclick="createDLevel(36)" class="startBtn btnTd exbtn">Extreme (36)</button></td>
+                </tr>                
+            </table>
+        </div>
+        <div class="gameBoxHelps">            
+            <table class="tHelps">
+                <tr>                    
+                <th class="tHelps thTime">Game Time</th>
+                <th class="tHelps thNext">Next Number</th>                
+                </tr>
+                <td class="tHelps tdTime"></td>
+                <td class="tHelps tdNext"></td>
+            </table>
+        </div>
+
+        <div class="gameBoxTable">            
+            <table class="gameTable">
+
+            </table>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

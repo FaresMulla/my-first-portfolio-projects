@@ -1,0 +1,96 @@
+.pageTitle{
+    background-color: lightskyblue;
+    border-bottom: darkblue solid 8px;
+    margin-top: 0px;
+    padding: 12px;
+}
+
+.mainPage{
+    width: 80%;
+    height: 100%;
+    background-color: lemonchiffon;    
+    margin: auto;
+    border: 2px solid black
+}
+
+.instructions{
+    text-align: center;
+    font-size: 18pt;
+
+}
+
+.startBtn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 45%;
+  }
+
+
+  .modalTest{
+    width: 70%;
+    height: 550px;
+    background-color: whitesmoke;    
+    margin: auto;
+    border: 2px solid black;
+    margin-top: 10px;
+    display: none;
+  }
+
+  .modalNote{
+    padding: 5px;
+    background-color: rgb(241, 131, 131);    
+    margin: auto;
+    border: 2px solid black;
+    position: absolute;
+    display: none;
+  }
+
+  .qusDiv{
+      border: 5px solid black;
+      width: 48%;
+      height: 490px;
+      margin-top: 12px;
+      margin-left: 8px;
+      float:left;
+  }
+
+  .imgQus{
+    width: 99%;
+    height: 99%;
+  }
+
+  .opQus{
+    width: 80%;
+    height: 15%;
+    text-align: center;
+    padding: 12px;
+    margin: 10px;
+    font-size: 20pt;
+    border: 2px solid black;
+  }
+
+  .opQus:hover{
+    background-color: lightgreen;
+  }
+
+  table{
+      border: black 1px solid;
+      text-align: center;
+      margin: auto;
+  }
+ 
+  .wQus{
+    border: black 1px solid;
+    text-align: center;
+    margin: auto;
+    width: 100px;
+
+}

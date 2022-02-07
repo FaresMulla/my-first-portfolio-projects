@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Sprint 1 - Fares Mulla</title>
+</head>
+
+<body onload="init()">
+    <!-- @CR - By convention, class names should be written with kebab-case. names here should be : 'box-game', 'box-top-game'... -->
+    <h1 class="header">Minesweeper Game</h1>
+    <h4 class="winner"></h4>
+    <div class="boxGame">
+        <div class="boxTopGame">
+            <div class="sideDiv scoreDiv">Score: 0</div>
+            <div class="middelDiv" onclick="init(), createBoard()"></div>
+            <div class="sideDiv timeDiv">Time</div>
+        </div>
+        
+        <div class="boxMidGame">
+            <div class="infoDiv lives"></div>            
+            <div onclick="checkSafty()" class="infoDiv check"></div>
+            <div onclick="helpPlayer()" class="infoDiv lamps"></div>
+        </div>
+        
+        <!-- @CR - Better way to call few functions in one event is to define a new function and call all the fuctions you need inside it. -->
+        <div class="boxMidGame">
+            <div onclick="resetLL(), init(), createBoard(4,2)" class="levelGame">Easy</div>
+            <div onclick="resetLL(), init(), createBoard(8,12)" class="levelGame">Hard</div>
+            <div onclick="resetLL(), init(), createBoard(12,30)" class="levelGame">Extreme</div>
+        </div>
+
+        <div class="boxTableGame">
+            <div class="boxTable">
+                <div class="modal">
+                    <h3></h3>
+                    <button class="removeBtn" onclick="removeC()">remove C</button>
+                </div>
+            <table class="tableGame">
+
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">&copy; By Fares Mulla 2022</footer>
+    <script src="js/main.js"></script>
+    <script src="js/utils.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+
+
+.header{
+    display: flex;
+    font-size: 25pt;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    height: 10vh;
+    font-weight: bolder;
+}
+
+.mytodos{    
+    font-size: 18pt;    
+    background-color: rgb(157, 240, 168);
+    height: 30vh;    
+}
+
+.todoList{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.done{
+    text-decoration: line-through;
+    
+}
+
+.todoElement{
+    cursor:pointer;    
+}
+
+
+
+.deleteBtn{
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 20px;
+    -webkit-box-shadow: 3px 7px 9px 1px #000000; 
+    box-shadow: 3px 7px 9px 1px #000000;
+}
+
+.todosEmpty{
+    display: block;
+    padding: 10px;
+}
+
+

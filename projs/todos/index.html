@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>todo</title>
+</head>
+<body onload="init()">
+    <section class="header">My ToDo's</section>
+
+    <section class="mytodos">
+        <h2 class="todosEmpty">No todos / No Active Todos, No Done Todos</h2>
+        
+        <ul class="todoList">
+            <li class="done todoElement">study html <button class="deleteBtn" onclick="onRemoveTodo()">❌</button></li>
+            
+        </ul>
+    </section>
+
+
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/service.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+</html>
