@@ -37,18 +37,18 @@
     <form>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Your E-mail</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
+        <input type="email" class="form-control userEmail" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com" required>
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Subject</label>
-        <input type="text" class="form-control subjectMsg" id="exampleInputPassword1" placeholder="Type subject here">
+        <input type="text" class="form-control subjectMsg" id="exampleInputPassword1" placeholder="Type subject here" required>
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Message Body</label>
-        <textarea type="text" class="form-control bodyTextMsg" rows="10" id="exampleInputPassword1" placeholder="Type message text here"></textarea>
+        <textarea type="text" class="form-control bodyTextMsg" rows="10" id="exampleInputPassword1" placeholder="Type message text here" required></textarea>
       </div>      
-      <a href="" class="connectMeByEmail" target="_blanck"><button type="button" class="btn btn-primary" onclick="sendMsgToMe()">Send</button></a>
+      <button type="button" class="btn btn-primary" onclick="sendMsgToMe()">Send</button>
     </form>
   </section>
     

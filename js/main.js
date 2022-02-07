@@ -79,13 +79,31 @@ function renderModal(){
 }
 
 function sendMsgToMe(){
-  const subject = $('.subjectMsg').val()
-  const bodyMsg = $('.bodyTextMsg').val()
+  let Email = $('.userEmail').val()
+  let subject = $('.subjectMsg').val()
+  let bodyMsg = $('.bodyTextMsg').val()
+  
+  if (!subject || !Email){
+    alert('your email and subject message are requird inputs!')
+     return
+  } 
   const myLink = `https://mail.google.com/mail/?view=cm&fs=1&to=farismolla888@gmail.com&su=${subject}&body=${bodyMsg}`
-  // const queryStringParams = `https://mail.google.com/mail/?view=cm&fs=1&to=farismolla888@gmail.com&su=${subject}&body=${bodyMsg}`
-  // const newUrl = window.location.protocol + '//' + window.location.host + window.location.pathname + queryStringParams
-  // window.history.pushState({ path: newUrl }, '', newUrl)
-  $('.connectMeByEmail').attr('href', myLink)
+  //const queryStringParams = `https://mail.google.com/mail/?view=cm&fs=1&to=farismolla888@gmail.com&su=${subject}&body=${bodyMsg}`
+  //const newUrl = window.location.protocol + '//' + window.location.host + window.location.pathname + queryStringParams
+
+  //window.history.pushState({ path: newUrl }, '', newUrl)
+  //$('.connectMeByEmail').attr('href', myLink)
+  Email = ''
+  subject = ''
+  bodyMsg = ''
+  
+  let clicklink=document.createElement('a')
+  clicklink.setAttribute('href',myLink)
+  clicklink.setAttribute('target',"_blank");
+  clicklink.click()
+
+  
+  
 }
 
 function setCarFilter(filterBy = {}) {
@@ -97,9 +115,8 @@ function setCarFilter(filterBy = {}) {
 
 
 function getDateButiTemplate(timeNum){
-    // console.log(timeNum);
-    const myDate =new Date(timeNum) 
-    const dateTemp =  `${myDate.getFullYear()}/0${myDate.getMonth()}/0${myDate.getDay()}`
+    let myDate =new Date(timeNum) 
+    let dateTemp =  `${myDate.getFullYear()}/${('0' + myDate.getMonth()).slice(-2)}/${('0' + myDate.getDay()).slice(-2)}`
     
     return dateTemp
     
