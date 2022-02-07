@@ -1,0 +1,116 @@
+body{
+    background-color: lightblue;
+    margin: 20px;
+}
+
+
+.modal h1{
+  text-align: center;
+  background-color: lightgoldenrodyellow;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  
+}
+
+.modal h2{
+    text-align: center;
+    
+  }
+
+.modal p{
+    font-size: 16pt;
+    text-align: justify;
+    padding: 10px;
+}
+
+.modal img{
+    width: 50vw;
+    height: 50vh;
+    margin-left: 15vw;
+}
+
+.modal{
+    position: absolute;    
+    width: 80%;
+    margin-left: 8vw;
+    height: 85vh;
+    top: 6vh;
+    background-color: rgb(245, 245, 245);
+    border: 5px solid black;
+    border-radius: 10px;
+    display: none;
+}
+
+
+.closeModalBtn, .addButton{
+    display:inline-block;
+    margin-top: 10px;
+    padding:5px;
+    border:1px solid #080c08;
+    background-color:#85e98a;
+    margin-left:8vw;
+    width: 80%;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#110d0d;
+    text-align:center;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.closeModalBtn:hover{
+    color:#000000;
+    background-color:#ebaaaa;
+}
+
+.addButton:hover{
+    color:#000000;
+    background-color:#1faf0c;
+}
+
+.title, .price, .imgUrl{
+    width: 80%;
+    margin: 10px;
+    margin-left: 8vw;
+    height: 25px;
+}
+
+.title{
+    margin-top: 10vh;
+}
+
+.tableBooks{
+    text-align: center;
+    font-size: 25pt;
+}
+
+.tableBooks thead th, tbody td{
+    border: 1px solid black;
+    padding: 3px;
+    
+}
+
+.tableBooks thead th{
+    cursor: pointer;
+}
+
+.filterBooks{
+    background-color: lightcyan;
+    width: 80vw;
+    height: 10vh;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.rateInput{
+    width: 30px;
+}
+
+.rateDiv{
+    margin-left: 35vw;
+}
+
